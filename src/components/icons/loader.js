@@ -1,5 +1,6 @@
 import React from 'react';
 import object from '@config';
+
 const logo = object.logo;
 const position = object.logo_alphabet_g_position;
 
