@@ -32,6 +32,24 @@ const StyledHeader = styled.header`
   }
 
   @media (prefers-reduced-motion: no-preference) {
+    ${props =>
+      props.scrollDirection === 'up' &&
+      !props.scrolledToTop &&
+      css`
+        height: var(--nav-scroll-height);
+        transform: translateY(0px);
+        background-color: rgba(10, 25, 47, 0.85);
+        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+      `};
+
+    ${props =>
+      props.scrollDirection === 'down' &&
+      !props.scrolledToTop &&
+      css`
+        height: var(--nav-scroll-height);
+        transform: translateY(calc(var(--nav-scroll-height) * -1));
+        box-shadow: 0 10px 30px -10px var(--navy-shadow);
+      `};
   }
 `;
 
@@ -144,15 +162,7 @@ const Nav = ({ isHome }) => {
     <div className="logo" tabIndex="-1">
       {isHome ? (
         <a href="/" aria-label="home">
-          <p
-            style={{
-              border: '2px solid #64FFDA',
-              padding: '10px 18px',
-              borderRadius: '45px',
-              width: 50,
-            }}>
-            A
-          </p>
+          <IconLogo />
         </a>
       ) : (
         <Link to="/" aria-label="home">
@@ -163,7 +173,11 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a
+      className="resume-button"
+      href="./AleemAlamResume.pdf"
+      target="_blank"
+      rel="noopener noreferrer">
       Resume
     </a>
   );
