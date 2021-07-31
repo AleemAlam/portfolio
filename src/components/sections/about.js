@@ -126,17 +126,6 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = [
-    'JavaScript (ES6+)',
-    'React',
-    'Redux',
-    'Node.js',
-    'Express.js',
-    'MongoDB',
-    'Python',
-    'Django',
-  ];
-
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
@@ -146,21 +135,17 @@ const About = () => {
           <div>
             <p>
               Hi, I'm Aleem Alam. I'm Broadly and deeply knowledgeable in MERN Stack as well as the
-              principles and experience of solving so many DSA problems.
+              principles and having experience in solving so many DSA problems.
             </p>
             <p>
-              I just graduated from the Full Stack Developer Bootcamp from Masai School and I am now
-              looking for my first full time development role with room to grow and learn. I find
-              the creativity and visual aspects of Frontend and Backend very interesting and would
-              love the opportunity to grasp more about Web Development.
+              I just graduated from the Full Stack Developer Bootcamp from Masai School. I am now
+              looking for my first full-time development role with room to grow and learn.
             </p>
-
-            <p>Here are a few technologies I've been working with recently:</p>
+            <p>
+              I find the creativity and visual aspects of Frontend and Backend very interesting and
+              would love the opportunity to grasp more about Web Development.
+            </p>
           </div>
-
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
         </StyledText>
 
         <StyledPic>
