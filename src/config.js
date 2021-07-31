@@ -10,6 +10,11 @@ module.exports = {
       name: 'GitHub',
       url: 'https://github.com/AleemAlam',
     },
+
+    {
+      name: 'Linkedin',
+      url: 'https://www.linkedin.com/in/aleem-alam-6a09a5210/',
+    },
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/ellu_aleem/',
@@ -18,16 +23,16 @@ module.exports = {
       name: 'Twitter',
       url: 'https://twitter.com/AleemAlam4/',
     },
-    {
-      name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/aleem-alam-6a09a5210/',
-    },
   ],
 
   navLinks: [
     {
       name: 'About',
       url: '/#about',
+    },
+    {
+      name: 'Skills',
+      url: '/#skills',
     },
     {
       name: 'Projects',
@@ -38,12 +43,55 @@ module.exports = {
       url: '/#contact',
     },
   ],
-
+  tech: [
+    {
+      name: 'javascript',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/javascript-2038874-1720087.png',
+    },
+    {
+      name: 'React',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/react-4-1175110.png',
+    },
+    {
+      name: 'Redux',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/redux-3629018-3030243.png',
+    },
+    {
+      name: 'nodejs',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/node-js-3-1174937.png',
+    },
+    {
+      name: 'mongoDB',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png',
+    },
+    {
+      name: 'django',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/django-1-282754.png',
+    },
+    {
+      name: 'python',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/python-2752092-2284909.png',
+    },
+    {
+      name: 'expressJs',
+      img:
+        'https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png',
+    },
+  ],
   projects: [
+    {
+      title: 'Redbus.com',
+      tech: ['React', 'Redux', 'Firebase', 'Node', 'Express', 'MongoDB'],
+      github: 'https://github.com/Ashwani-Sahu/redbus-clone-masai',
+      image:
+        'https://cdn.hashnode.com/res/hashnode/image/upload/v1627762332983/Mm_D10_ZY.png?auto=compress',
+      html:
+        '<p>RedBus is an Indian online bus ticketing platform, providing ticket booking facilities through its website, iOS, and Android mobile apps.</p>',
+    },
     {
       title: 'UrbanCompany.com',
       tech: ['React', 'Redux', 'Firebase', 'Json Server'],
-      github: 'https://github.com/AleemAlam/monday.com-clone',
+      github: 'https://github.com/AleemAlam/Urban-Company',
       image:
         'https://cdn.hashnode.com/res/hashnode/image/upload/v1627237708246/iv1Q0sDiX.png?auto=compress',
       html:
@@ -52,7 +100,7 @@ module.exports = {
     {
       title: 'DailyDietBox.com',
       tech: ['HTML', 'CSS', 'Javascript', 'Json Server'],
-      github: 'https://github.com/AleemAlam/monday.com-clone',
+      github: 'https://github.com/Rinish94/dailydietbox_clone',
       image:
         'https://aleemalam.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1616360871896%2FxE7Zb7ZJ3.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75',
       html:
