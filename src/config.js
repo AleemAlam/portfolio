@@ -39,6 +39,10 @@ module.exports = {
       url: '/#projects',
     },
     {
+      name: 'Blogs',
+      url: '/#blogs',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },
@@ -74,8 +78,29 @@ module.exports = {
     },
     {
       name: 'expressJs',
-      img:
-        'https://www.sohamkamani.com/static/65137ed3c844d05124dcfdab28263c21/38cea/express-routing-logo.png',
+      img: 'https://pngimage.net/wp-content/uploads/2018/05/express-js-png-7.png',
+    },
+  ],
+  blogs: [
+    {
+      frontmatter: {
+        external: 'https://aleemalam.hashnode.dev/how-we-cloned-mondaycom-in-just-3-days',
+        github: 'https://github.com/AleemAlam/monday.com-clone',
+        title: 'How we cloned Monday.com in just 3 days.',
+      },
+      html:
+        '<p> Monday.com is an awesome work management website that enables organizations to manage their tasks and projects</p>',
+    },
+    {
+      frontmatter: {
+        external:
+          'https://aleemalam.hashnode.dev/only-html-css-javascript-is-possible-to-clone-dailydietboxescom-in-just-3-days',
+        github: 'https://github.com/Rinish94/dailydietbox_clone',
+        title:
+          '(ONLY HTML CSS JAVASCRIPT) Is Possible To Clone DailyDietBoxes.com in just 3 days??',
+      },
+      html:
+        '<p>Daily Diet Boxes is a startup to provide every individual, a way to secure his/her diet.</p>',
     },
   ],
   projects: [
@@ -96,6 +121,7 @@ module.exports = {
         'https://cdn.hashnode.com/res/hashnode/image/upload/v1627237708246/iv1Q0sDiX.png?auto=compress',
       html:
         '<p>Urban Company is an Indian gig marketplace that offers home installation, maintenance and repair services, and home beauty and wellness services.</p>',
+      link: 'https://urban-company-clone.netlify.app/',
     },
     {
       title: 'DailyDietBox.com',

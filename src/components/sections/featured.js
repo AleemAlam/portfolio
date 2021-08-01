@@ -314,14 +314,14 @@ const Featured = () => {
 
       <StyledProjectsGrid>
         {projects &&
-          projects.map(({ title, tech, github, image, html }, i) => (
+          projects.map(({ title, tech, github, image, html, link }, i) => (
             <StyledProject key={i} ref={el => (revealProjects.current[i] = el)}>
               <div className="project-content">
                 <div>
                   <p className="project-overline">Featured Project</p>
 
                   <h3 className="project-title">
-                    <a href={github}>{title}</a>
+                    <a href={link ? link : github}>{title}</a>
                   </h3>
 
                   <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
