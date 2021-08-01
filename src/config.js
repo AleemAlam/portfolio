@@ -132,6 +132,7 @@ module.exports = {
         'https://aleemalam.hashnode.dev/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1616360871896%2FxE7Zb7ZJ3.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75',
       html:
         '<p>if you want to live a healthy life without compromising taste, DailyDietPlan.com is for you.</p>',
+      link: 'https://daily-diet-box.netlify.app/',
     },
     {
       title: 'Monday.com',
@@ -141,6 +142,7 @@ module.exports = {
         'https://cdn.hashnode.com/res/hashnode/image/upload/v1612728428732/qNTKIyHB0.png?auto=compress,format&format=webp',
       html:
         '<p>Monday.com, legally Monday.com Ltd., is a Cloud-based platform that allows companies to create their own applications and work management software..</p>',
+      link: 'https://clone-monday.netlify.app/',
     },
   ],
 
