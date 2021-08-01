@@ -244,9 +244,10 @@ const Projects = () => {
             <a href={external} target="_blank" rel="noreferrer">
               {title}
             </a>
+            <h1>kjdefhcosidc</h1>
           </h3>
 
-          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
+   
         </header>
 
         <footer>
@@ -257,6 +258,7 @@ const Projects = () => {
               ))}
             </ul>
           )}
+         
         </footer>
       </div>
     );
@@ -269,6 +271,7 @@ const Projects = () => {
       <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
         view the archive
       </Link>
+      
 
       <ul className="projects-grid">
         {prefersReducedMotion ? (

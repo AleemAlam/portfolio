@@ -34,7 +34,7 @@ const Head = ({ title, description, image }) => {
   } = site.siteMetadata;
 
   const seo = {
-    title: 'Aleem Alam',
+    title: 'Aman Kumar',
     description: description || defaultDescription,
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,

@@ -27,6 +27,7 @@ const StyledText = styled.div`
     margin: 20px 0 0 0;
     overflow: hidden;
     list-style: none;
+  
 
     li {
       position: relative;
@@ -127,14 +128,16 @@ const About = () => {
   }, []);
 
   const skills = [
+    "HTML",
+    
+    "CSS",
     'JavaScript (ES6+)',
     'React',
     'Redux',
     'Node.js',
     'Express.js',
     'MongoDB',
-    'Python',
-    'Django',
+    "Data Structure And Algorithm",
   ];
 
   return (
@@ -145,8 +148,10 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi, I'm Aleem Alam. I'm Broadly and deeply knowledgeable in MERN Stack as well as the
-              principles and experience of solving so many DSA problems.
+            My name is Aman Kumar. Passionate Front-end web developer. 
+            Familiar with a wide range of technology including HTML, javascript. 
+            Complex problem-solver with an analytical mindset along with a never- give-up attitude. 
+            Dedicated to achieving demanding development objectives in tight schedules while producing impeccable code.
             </p>
             <p>
               I just graduated from the Full Stack Developer Bootcamp from Masai School and I am now
@@ -158,7 +163,7 @@ const About = () => {
             <p>Here are a few technologies I've been working with recently:</p>
           </div>
 
-          <ul className="skills-list">
+          <ul  className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
@@ -167,7 +172,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/MyPic.jpg"
+              src="../../images/MyPic.png"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
