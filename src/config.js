@@ -112,6 +112,7 @@ module.exports = {
         'https://cdn.hashnode.com/res/hashnode/image/upload/v1627762332983/Mm_D10_ZY.png?auto=compress',
       html:
         '<p>RedBus is an Indian online bus ticketing platform, providing ticket booking facilities through its website, iOS, and Android mobile apps.</p>',
+      link: 'https://redbus-clone-frontend.vercel.app/',
     },
     {
       title: 'UrbanCompany.com',
