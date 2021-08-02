@@ -8,25 +8,28 @@ import { usePrefersReducedMotion } from '@hooks';
 
 const StyledJobsSection = styled.section`
   max-width: 1000px;
-
+  margin: auto;
   .inner {
     display: flex;
 
-    @media (max-width: 600px) {
-      display: block;
-    }
+    // @media (max-width: 600px) {
+    //   display: block;
+    // }
 
-    // Prevent container from jumping
-    @media (min-width: 700px) {
-      min-height: 340px;
-    }
+    // // Prevent container from jumping
+    // @media (min-width: 700px) {
+    //   min-height: 340px;
+    // }
     flex-wrap: wrap;
     justify-content: space-between;
   }
   .wrapper {
     ${({ theme }) => theme.mixins.boxShadow};
     margin: 30px 65px;
-    position: relative;
+    background-color: #fff;
+    border-radius: 18px;
+    width: 120px;
+    height: 120px;
   }
   img {
     width: 120px;

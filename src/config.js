@@ -50,7 +50,7 @@ module.exports = {
   tech: [
     {
       name: 'javascript',
-      img: 'https://cdn.iconscout.com/icon/free/png-512/javascript-2038874-1720087.png',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/javascript-2752148-2284965.png',
     },
     {
       name: 'React',
