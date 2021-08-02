@@ -35,8 +35,8 @@ const Head = ({ title, description, image }) => {
 
   const seo = {
     title: 'Aman Kumar',
-    description: description || defaultDescription,
-    image: `${siteUrl}${image || defaultImage}`,
+    description: 'Hi,I am Aman Kumar,I Work for Web Development',
+    // image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   };
 
@@ -44,13 +44,13 @@ const Head = ({ title, description, image }) => {
     <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
       <html lang="en" />
 
-      <meta name="description" content="I am aman Kumar,I work for web development" />
+      <meta name="description" content={seo.description} />
      
 
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />
-   
-     
+      <meta property="og:image" content={seo.image} />
+      <meta property="og:url" content={seo.url} />
       <meta property="og:type" content="website" />
 
       <meta name="twitter:card" content="summary_large_image" />

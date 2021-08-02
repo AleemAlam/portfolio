@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { srConfig } from '@config';
+import { srConfig, blogs } from '@config';
 import sr from '@utils/sr';
 import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
@@ -46,6 +46,7 @@ const StyledProjectsSection = styled.section`
 const StyledProject = styled.li`
   position: relative;
   cursor: default;
+  
   transition: var(--transition);
 
   @media (prefers-reduced-motion: no-preference) {
@@ -244,10 +245,9 @@ const Projects = () => {
             <a href={external} target="_blank" rel="noreferrer">
               {title}
             </a>
-            <h1>kjdefhcosidc</h1>
           </h3>
 
-   
+          <div className="project-description" dangerouslySetInnerHTML={{ __html: html }} />
         </header>
 
         <footer>
@@ -258,55 +258,44 @@ const Projects = () => {
               ))}
             </ul>
           )}
-         
         </footer>
       </div>
     );
   };
 
   return (
-    <StyledProjectsSection>
-      <h2 ref={revealTitle}>Other Noteworthy Projects</h2>
-
-      <Link className="inline-link archive-link" to="/archive" ref={revealArchiveLink}>
-        view the archive
+    <StyledProjectsSection id="blogs">
+      <Link className="inline-link archive-link" to="" ref={revealArchiveLink}>
+        04. Blogs
       </Link>
-      
 
-      <ul className="projects-grid">
-        {prefersReducedMotion ? (
-          <>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
-                <StyledProject key={i}>{projectInner(node)}</StyledProject>
-              ))}
-          </>
-        ) : (
-          <TransitionGroup component={null}>
-            {projectsToShow &&
-              projectsToShow.map(({ node }, i) => (
-                <CSSTransition
-                  key={i}
-                  classNames="fadeup"
-                  timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 300 : 300}
-                  exit={false}>
-                  <StyledProject
-                    key={i}
-                    ref={el => (revealProjects.current[i] = el)}
-                    style={{
-                      transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
-                    }}>
-                    {projectInner(node)}
-                  </StyledProject>
-                </CSSTransition>
-              ))}
-          </TransitionGroup>
-        )}
+      <h2 ref={revealTitle}>Some og my Blogs</h2>
+
+      <ul style={{border:"1px solid black"}} className="projects-grid">
+        <TransitionGroup component={null}>
+          {blogs.map((node, i) => (
+            <CSSTransition
+              key={i}
+              classNames="fadeup"
+              timeout={i >= GRID_LIMIT ? (i - GRID_LIMIT) * 400 : 400}
+              exit={false}>
+              <StyledProject
+                key={i}
+                ref={el => (revealProjects.current[i] = el)}
+                style={{
+                  transitionDelay: `${i >= GRID_LIMIT ? (i - GRID_LIMIT) * 100 : 0}ms`,
+                  
+                }}>
+                {projectInner(node)}
+              </StyledProject>
+            </CSSTransition>
+          ))}
+        </TransitionGroup>
       </ul>
 
-      <button className="more-button" onClick={() => setShowMore(!showMore)}>
+      {/* <button className="more-button" onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
-      </button>
+      </button> */}
     </StyledProjectsSection>
   );
 };

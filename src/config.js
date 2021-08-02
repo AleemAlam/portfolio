@@ -34,10 +34,72 @@ module.exports = {
       url: '/#projects',
     },
     {
+      name: 'Blogs',
+      url: '/#blogs',
+    },
+    {
       name: 'Contact',
       url: '/#contact',
     },
   ],
+
+  tech: [
+    {
+      name: 'javascript',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/javascript-2038874-1720087.png',
+    },
+    {
+      name: 'React',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/react-4-1175110.png',
+    },
+    {
+      name: 'Redux',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/redux-3629018-3030243.png',
+    },
+    {
+      name: 'nodejs',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/node-js-3-1174937.png',
+    },
+    {
+      name: 'mongoDB',
+      img: 'https://cdn.iconscout.com/icon/free/png-512/mongodb-5-1175140.png',
+    },
+    {
+      name: 'HTML',
+      img: 'https://cdn.iconscout.com/icon/free/png-64/html-2752158-2284975.png',
+    },
+    {
+      name: 'CSS',
+      img: 'https://cdn.iconscout.com/icon/free/png-64/css-131-722685.png',
+    },
+    {
+      name: 'expressJs',
+      img: 'https://pngimage.net/wp-content/uploads/2018/05/express-js-png-7.png',
+    },
+  ],
+  blogs: [
+    {
+      frontmatter: {
+        external:
+          'https://amankumar.hashnode.dev/clone-of-airgarage-website-within-3-day',
+        github: 'https://github.com/amankumarsuman/Airgarage.git',
+        title: ' Airgarage website clone using HTML,css and Javascript.',
+      },
+      html:
+        '<p>Hello readers, in this blog I am going to share my experience and learnings from this project. This is a group project. In the very beginning, we have studied the whole Airgarage Website and came up with a plan to divide the key features among the three of us. The plan was to build the landing page first then work on important features.</p>',
+    },
+    {
+      frontmatter: {
+        external: 'https://amankumar.hashnode.dev/lately-website-clone',
+        github: 'https://github.com/amankumarsuman/lately.git',
+        title: 'The cloning of Lately.io',
+      },
+      html:
+        '<p> How often, as full stack developer , we chose to execute a duplicate of some element that an outsider site has in our own site? As a beginner at whatever point you need to begin a project you face bunches of difficulties. You have less amount of thought regarding organizing an project and all these. </p>',
+    },
+   
+  ],
+
 
   projects: [
     {

@@ -3,16 +3,14 @@ import styled from 'styled-components';
 import { srConfig, email } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
-
+import { Icon } from '@components/icons';
 const StyledContactSection = styled.section`
   max-width: 600px;
   margin: 0 auto 100px;
   text-align: center;
-
   @media (max-width: 768px) {
     margin: 0 auto 50px;
   }
-
   .overline {
     display: block;
     margin-bottom: 20px;
@@ -20,27 +18,57 @@ const StyledContactSection = styled.section`
     font-family: var(--font-mono);
     font-size: var(--fz-md);
     font-weight: 400;
-
     &:before {
       bottom: 0;
       font-size: var(--fz-sm);
     }
-
     &:after {
       display: none;
     }
   }
-
   .title {
     font-size: clamp(40px, 5vw, 60px);
   }
-
   .email-link {
     ${({ theme }) => theme.mixins.bigButton};
     margin-top: 50px;
-    margin-right:50px;
   }
+`;
 
+const TableStyles = styled.table`
+  border-collapse: collapse;
+  /* background-color: var(--light-navy); */
+  color: var(--lightest-slate);
+  margin: auto;
+  margin-top: 30px;
+  font-size: 17px;
+  text-align: left;
+  & td {
+    border: 1px solid var(--lightest-navy);
+  }
+  & td {
+    padding: 15px 25px;
+  }
+  & tr:hover {
+    background: var(--light-navy);
+  }
+  & tr > td:first-of-type {
+    font-weight: 400;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  .sMedia a {
+    color: var(--light-slate);
+    padding: 5px 15px 5px 0;
+    /* margin-right: 10px; */
+    padding: 10px;
+    /* margin */
+  }
+  .sMedia a:hover > svg {
+    color: var(--green);
+  }
 `;
 
 const Contact = () => {
@@ -66,10 +94,55 @@ const Contact = () => {
         you are an employer looking for dedicated web developer, HIRE me before someone else does.
       </p>
 
+      <TableStyles>
+        <tbody>
+          <tr>
+            <td>Name :</td>
+            <td>Aman Kumar</td>
+          </tr>
+          <tr>
+            <td>Email :</td>
+            <td>amankumarsuman.ssjha143@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Phone :</td>
+            <td>(+91) 7814522021</td>
+          </tr>
+          <tr>
+            <td>Social Media :</td>
+            <td className="sMedia">
+              <a
+                href="https://github.com/amankumarsuman"
+                title="GitHub link"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon name={'GitHub'} />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/aman-kumar-b683b614b/"
+                title="LinkedIn link"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon name={'Linkedin'} />
+              </a>
+              <a
+                href="https://twitter.com/amankumarsuman1"
+                title="Twitter Link"
+                target="_blank"
+                rel="noopener noreferrer">
+                <Icon name={'Twitter'} />
+              </a>
+             
+            </td>
+          </tr>
+          <tr>
+            <td>Location :</td>
+            <td>Darbhanga, India</td>
+          </tr>
+        </tbody>
+      </TableStyles>
       <a className="email-link" href={`mailto:${email}`}>
         Say Hello
-      </a>
-      <a className="email-link" >  Or Can Call on 7814522021
       </a>
     </StyledContactSection>
   );
