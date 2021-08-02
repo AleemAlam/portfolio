@@ -269,7 +269,7 @@ const Projects = () => {
         04. Blogs
       </Link>
 
-      <h2 ref={revealTitle}>Some og my Blogs</h2>
+      <h2 ref={revealTitle}>Some of my Blogs</h2>
 
       <ul style={{border:"1px solid black"}} className="projects-grid">
         <TransitionGroup component={null}>
