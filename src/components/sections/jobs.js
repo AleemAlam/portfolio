@@ -12,14 +12,15 @@ const StyledJobsSection = styled.section`
   .inner {
     display: flex;
 
-    // @media (max-width: 600px) {
-    //   display: block;
-    // }
+    @media (max-width: 600px) {
+      width: 250px;
+      margin: auto;
+    }
 
-    // // Prevent container from jumping
-    // @media (min-width: 700px) {
-    //   min-height: 340px;
-    // }
+    // Prevent container from jumping
+    @media (min-width: 700px) {
+      min-height: 340px;
+    }
     flex-wrap: wrap;
     justify-content: space-between;
   }

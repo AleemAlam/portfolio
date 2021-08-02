@@ -138,7 +138,7 @@ const About = () => {
               principles and having experience in solving so many DSA problems.
             </p>
             <p>
-              I just graduated from the Full Stack Developer Bootcamp from Masai School. I am now
+              I just graduated from the Full Stack Developer course from Masai School. I am now
               looking for my first full-time development role with room to grow and learn.
             </p>
             <p>
