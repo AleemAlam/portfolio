@@ -105,16 +105,6 @@ module.exports = {
   ],
   projects: [
     {
-      title: 'Redbus.com',
-      tech: ['React', 'Redux', 'Firebase', 'Node', 'Express', 'MongoDB'],
-      github: 'https://github.com/Ashwani-Sahu/redbus-clone-masai',
-      image:
-        'https://cdn.hashnode.com/res/hashnode/image/upload/v1627762332983/Mm_D10_ZY.png?auto=compress',
-      html:
-        '<p>RedBus is an Indian online bus ticketing platform, providing ticket booking facilities through its website, iOS, and Android mobile apps.</p>',
-      link: 'https://redbus-clone-frontend.vercel.app/',
-    },
-    {
       title: 'UrbanCompany.com',
       tech: ['React', 'Redux', 'Firebase', 'Json Server'],
       github: 'https://github.com/AleemAlam/Urban-Company',
