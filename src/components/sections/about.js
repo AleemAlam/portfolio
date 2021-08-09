@@ -49,7 +49,7 @@ const StyledText = styled.div`
 const StyledPic = styled.div`
   position: relative;
   max-width: 300px;
-
+  top: -67px;
   @media (max-width: 768px) {
     margin: 50px auto 0;
     width: 70%;
@@ -152,7 +152,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/MyPic.png"
+              src="../../images/MyPic.jpg"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
